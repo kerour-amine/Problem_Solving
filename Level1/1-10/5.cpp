@@ -49,5 +49,5 @@ int main()
 
     PrintResult(ReadInfo());
     return 0;
-    return o;
+    
 }
