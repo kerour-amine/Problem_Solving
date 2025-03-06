@@ -22,4 +22,5 @@ int main()
 {
     PrintResult(ReadNumber());
     return 0;
+    
 }
