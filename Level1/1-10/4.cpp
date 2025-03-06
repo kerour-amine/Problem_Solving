@@ -7,7 +7,7 @@ struct stInfo
     bool HasDrivingLicense;
 };
 
-stInfo ReadInfo(stInfo Info)
+stInfo ReadInfo()
 {
     stInfo Info;
     cout << "Enter your age: \n";
@@ -18,18 +18,11 @@ stInfo ReadInfo(stInfo Info)
 }
 bool IsAccepted(stInfo Info)
 {
-    if ((Info.Age > 21) && (Info.HasDrivingLicense == 1))
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
+    return ((Info.Age > 21) && (Info.HasDrivingLicense));
 }
-void PrintResult(bool Result)
+void PrintResult(stInfo Info)
 {
-    if (Result)
+    if (IsAccepted(Info))
     {
         cout << "Hired\n";
     }
@@ -41,7 +34,7 @@ void PrintResult(bool Result)
 
 int main()
 {
-    
-    PrintResult(IsAccepted(ReadInfo(Info)));
+
+    PrintResult(ReadInfo());
     return 0;
 }
