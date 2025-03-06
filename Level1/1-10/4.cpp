@@ -9,7 +9,7 @@ struct stInfo
 
 stInfo ReadInfo(stInfo Info)
 {
-
+    stInfo Info;
     cout << "Enter your age: \n";
     cin >> Info.Age;
     cout << "Do You have driving license ? 1:yes , 0:no\n";
@@ -41,7 +41,7 @@ void PrintResult(bool Result)
 
 int main()
 {
-    stInfo Info;
+    
     PrintResult(IsAccepted(ReadInfo(Info)));
     return 0;
 }
