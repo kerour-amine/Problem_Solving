@@ -10,9 +10,9 @@ struct stInfo
 stInfo ReadInfo()
 {
     stInfo Info;
-    cout << "Enter your age: \n";
+    cout << "Enter your age: ";
     cin >> Info.Age;
-    cout << "Do You have driving license ? 1:yes , 0:no\n";
+    cout << "Do You have driving license: ";
     cin >> Info.HasDrivingLicense;
     return Info;
 }
