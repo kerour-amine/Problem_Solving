@@ -17,7 +17,7 @@ float CircleArea(float r)
 }
 void PrintResult(float Area)
 {
-    cout << "\nRectangle area is: " << Area << endl;
+    cout << "\nCircle area is: " << Area << endl;
 }
 int main()
 {
