@@ -2,7 +2,7 @@
 #include <math.h>
 using namespace std;
 
-float ReadTriangleData(float &a,float &b)
+void ReadTriangleData(float &a,float &b)
 {
     
     cout << "Enter a: ";
