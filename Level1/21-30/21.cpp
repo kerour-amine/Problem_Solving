@@ -4,15 +4,15 @@ using namespace std;
 
 float ReadCircumFerence()
 {
-    float L  ;
+    float L;
     cout << "Enter L: ";
-    cin >>L;
+    cin >> L;
     return L;
 }
 float CircleAreaByCircumFerence(float L)
 {
     const float PI = 3.14159265;
-    float Area = (pow(L,2))/(4*PI);
+    float Area = pow(L, 2) / (4 * PI);
     return Area;
 }
 void PrintResult(float Area)
