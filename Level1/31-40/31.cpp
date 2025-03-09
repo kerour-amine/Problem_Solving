@@ -12,7 +12,7 @@ int ReadNumber()
 
 int Powerof2_3_4(int N)
 {
-    int P = 1, P1, P2, P3;
+    int P = 1;
     for (int i = 1; i <= 3; i++)
     {
         P = N * P;
