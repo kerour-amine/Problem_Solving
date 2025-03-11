@@ -37,40 +37,28 @@ string GetMonth(enMonths Months)
     {
     case enMonths::January:
         return "January";
-        break;
     case enMonths::February:
         return "February";
-        break;
     case enMonths::March:
         return "March";
-        break;
     case enMonths::April:
         return "April";
-        break;
     case enMonths::May:
         return "May";
-        break;
     case enMonths::June:
         return "June";
-        break;
     case enMonths::July:
         return "July";
-        break;
     case enMonths::August:
         return "August";
-        break;
     case enMonths::September:
         return "September";
-        break;
     case enMonths::October:
         return "October";
-        break;
     case enMonths::November:
         return "November";
-        break;
     case enMonths::December:
         return "December";
-        break;
     default:
         return "Wrong Month";
     }
