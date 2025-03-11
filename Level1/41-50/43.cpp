@@ -19,10 +19,10 @@ float ReadPositiveNumber(string message)
 stTaskDuration SecondsToTaskDuration(int TotalSeconds)
 {
     stTaskDuration TaskDuration;
-    int SecondsOfDay = 24 * 60 * 60;
-    int SecondsOfHour = 60 * 60;
-    int SecondsOfMinute = 60;
-    int Remainder;
+    const int SecondsOfDay = 24 * 60 * 60;
+    const int SecondsOfHour = 60 * 60;
+    const int SecondsOfMinute = 60;
+     int Remainder;
 
     TaskDuration.NumberOfDays = floor(TotalSeconds / SecondsOfDay);
     Remainder = TotalSeconds % SecondsOfDay;
