@@ -10,9 +10,10 @@ string ReadPinCode()
 bool Login()
 {
     string PinCode;
-    int counter = 2;
+    int counter = 3;
     do
     {
+        counter--;
         PinCode = ReadPinCode();
         if (PinCode == "1234")
             return 1;
@@ -21,11 +22,10 @@ bool Login()
             cout << "\nwrog Pin \n";
             cout << "still " << counter << " chances: \n ";
             system("color 4F");
-            counter--;
         }
 
-    } while (PinCode != "1234" && counter >= 0);
-    cout << "Your Card Has Been Blocked";
+    } while (PinCode != "1234" && counter >= 1);
+
     return 0;
 }
 int main()
@@ -34,6 +34,10 @@ int main()
     {
         system("color 2F");
         cout << "\nYour account balance is: 7500\n";
+    }
+    else
+    {
+        cout << "Your Card Has Been Blocked";
     }
     return 0;
 }
