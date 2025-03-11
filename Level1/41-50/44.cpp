@@ -32,25 +32,18 @@ string GetDayOfWeek(enDaysOfWeek DaysOfWeek)
     {
     case enDaysOfWeek::Sunday:
         return "Sunday";
-        break;
     case enDaysOfWeek::Monday:
         return "Monday";
-        break;
     case enDaysOfWeek::Tuesday:
         return "Tuesday";
-        break;
     case enDaysOfWeek::Wednesday:
         return "Wednesday";
-        break;
     case enDaysOfWeek::Thursday:
         return "Thursday";
-        break;
     case enDaysOfWeek::Friday:
         return "Friday";
-        break;
     case enDaysOfWeek::Saturday:
         return "Saturday";
-        break;
     default:
         return "Wrong Day";
     }
