@@ -15,19 +15,20 @@ int ReadPositiveNumber(string message)
 
 int SumOfDigits(int Number)
 {
-    int Remainder=0,Sum=0;
-    while(Number>0){
-        Remainder=Number%10;
-        Number=Number/10;
-        Sum=Sum+Remainder;
+    int Remainder = 0, Sum = 0;
+    while (Number > 0)
+    {
+        Remainder = Number % 10;
+        Number = Number / 10;
+        Sum = Sum + Remainder;
     }
     return Sum;
 }
 
 int main()
 {
-    int Sum=SumOfDigits(ReadPositiveNumber("Please enter positive numebr: "));
-    cout<<"\nSum Of Digits = "<<Sum<<endl;
-    
+    int Sum = SumOfDigits(ReadPositiveNumber("Please enter positive numebr: "));
+    cout << "\nSum Of Digits = " << Sum << endl;
+
     return 0;
 }
