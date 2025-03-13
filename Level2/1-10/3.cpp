@@ -18,12 +18,12 @@ bool isPerfectNumber(int Number)
     int Sum = 0;
     for (int i = 1; i < Number; i++)
     {
-        if (Number%i==0)
+        if (Number % i == 0)
         {
             Sum += i;
         }
     }
-    return Sum==Number;
+    return Sum == Number;
 }
 
 void PrintResult(int Number)
