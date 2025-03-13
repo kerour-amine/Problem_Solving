@@ -20,7 +20,7 @@ void PrintDigits(int Number)
     {
         Remainder = Number % 10;
         Number = Number / 10;
-        cout << Remainder;
+        cout << Remainder<<endl;
     }
 }
 
