@@ -13,7 +13,7 @@ int ReadPositiveNumber(string message)
     return Number;
 }
 
-int PrintDigitFrequency(int Number, short Digit)
+int DigitFreq(int Number, short Digit)
 {
     int Remainder = 0, FreqCount = 0;
     while (Number > 0)
