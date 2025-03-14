@@ -30,7 +30,7 @@ int main()
 {
     int Number = ReadPositiveNumber("Please enter a number: ");
     short Digit = ReadPositiveNumber("Please enter digit: ");
-    cout << "\nDigit " << Digit << " Frequency is: " << PrintDigitFrequency(Number, Digit) << " Time(s)\n"
+    cout << "\nDigit " << Digit << " Frequency is: " << DigitFreq(Number, Digit) << " Time(s)\n"
          << endl;
 
     return 0;
