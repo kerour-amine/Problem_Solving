@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-string ReadPassord()
+string ReadPassword()
 {
     string Password = "";
     cout << "Please enter 3 letters (all capitals): ";
@@ -42,6 +42,6 @@ bool GuessPassWord(string Password)
 
 int main()
 {
-    GuessPassWord(ReadPassord());
+    GuessPassWord(ReadPassword());
     return 0;
 }
