@@ -20,7 +20,7 @@ int RandomNumber(int From, int To)
     return randNum;
 }
 
-void FillArrayWithRandomNumbers(int Arr[100], int &arrLength)
+void FillArrayWithRandomNumbers(int Arr[100], int arrLength)
 {
 
     for (int i = 0; i < arrLength; i++)
@@ -54,7 +54,7 @@ int main()
 
     int Arr[100], Arr2[100], ArrSum[100];
 
-    int arrLength = ReadPositiveNumber("Enter Number of elements: ");
+    int arrLength = ReadPositiveNumber("Enter Number of elements: \n");
 
     FillArrayWithRandomNumbers(Arr, arrLength);
     FillArrayWithRandomNumbers(Arr2, arrLength);
