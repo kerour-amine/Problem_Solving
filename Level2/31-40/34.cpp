@@ -36,42 +36,45 @@ void PrintArray(int Arr[100], int arrLength)
     {
         cout << Arr[i] << " ";
     }
-    cout<<"\n";
+    cout << "\n";
 }
 
-int FindNumberPositionInArray(int Arr[100],int arrLength,int NumberToSearch){
+int FindNumberPositionInArray(int Arr[100], int arrLength, int NumberToSearch)
+{
 
-    for(int i=0;i<arrLength;i++){
-        if(Arr[i]==NumberToSearch){
+    for (int i = 0; i < arrLength; i++)
+    {
+        if (Arr[i] == NumberToSearch)
+        {
             return i;
         }
     }
     return -1;
 }
 
-int main(){
+int main()
+{
     int Arr[100];
 
     int arrLength = ReadPositiveNumber("Enter length of the array: ");
-    FillArrayWithRandomNumbers(Arr,arrLength);
+    FillArrayWithRandomNumbers(Arr, arrLength);
 
-    cout<<"\nArray 1 elements: \n";
-    PrintArray(Arr,arrLength);
+    cout << "\nArray 1 elements: \n";
+    PrintArray(Arr, arrLength);
 
     int NumberToSearchFor = ReadPositiveNumber("\nEnter a number to search for: ");
-    cout<<"\nNumber you are looking for is: "<<NumberToSearchFor<<"\n";
-    
-    short NumberPosition = FindNumberPositionInArray(Arr,arrLength,NumberToSearchFor);
+    cout << "\nNumber you are looking for is: " << NumberToSearchFor << "\n";
 
-    if(NumberPosition==-1)
-        cout<<"The number is not found :( \n";
-    else 
+    short NumberPosition = FindNumberPositionInArray(Arr, arrLength, NumberToSearchFor);
+
+    if (NumberPosition == -1)
+        cout << "The number is not found :( \n";
+    else
     {
-        
-        cout<<"The number found at position: "<<NumberPosition<<"\n";
-        cout<<"The number found its order is: "<<NumberPosition+1<<"\n";
 
+        cout << "The number found at position: " << NumberPosition << "\n";
+        cout << "The number found its order is: " << NumberPosition + 1 << "\n";
     }
-    
+
     return 0;
 }
