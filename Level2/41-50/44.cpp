@@ -51,7 +51,7 @@ int main()
     PrintArray(Arr, arrLength);
 
     cout << "\nOdd Numbers Count is: ";
-    cout << CountEvenNumbers(Arr, arrLength) << endl;
+    cout << OddNumbersInArray(Arr, arrLength) << endl;
 
     return 0;
 }
