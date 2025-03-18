@@ -3,13 +3,13 @@ using namespace std;
 
 float ReadNumber()
 {
-    int Number;
+    float Number;
     cout << "\nEnter a number: ";
     cin >> Number;
     return Number;
 }
 
-float Myabs(int Number)
+float Myabs(float Number)
 {
     if (Number < 0)
         return -Number;
