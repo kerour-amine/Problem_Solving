@@ -28,7 +28,7 @@ void PrintArray(int Arr[100], int arrLength)
     }
 }
 
-int OddNumbersInArray(int Arr[100], int arrLength)
+int CountOddNumbers(int Arr[100], int arrLength)
 {
     int counter = 0;
     for (int i = 0; i < arrLength; i++)
