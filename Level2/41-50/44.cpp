@@ -15,7 +15,7 @@ void FillArrayWithRandomNumbers(int Arr[100], int &arrLength)
 
     for (int i = 0; i < arrLength; i++)
     {
-        Arr[i] = RandomNumber(1, 100);
+        Arr[i] = RandomNumber(-100, 100);
     }
 }
 
@@ -28,12 +28,12 @@ void PrintArray(int Arr[100], int arrLength)
     }
 }
 
-int CountEvenNumbers(int Arr[100], int arrLength)
+int CountPositiveNumbers(int Arr[100], int arrLength)
 {
     int counter = 0;
     for (int i = 0; i < arrLength; i++)
     {
-        if (Arr[i] % 2 == 0)
+        if (Arr[i] >= 0)
             counter++;
     }
     return counter;
@@ -50,8 +50,8 @@ int main()
     cout << "\nArray Elements: \n";
     PrintArray(Arr, arrLength);
 
-    cout << "\nOdd Numbers Count is: ";
-    cout << OddNumbersInArray(Arr, arrLength) << endl;
+    cout << "\n Positive Numbers Count is: ";
+    cout << CountPositiveNumbers(Arr, arrLength) << endl;
 
     return 0;
 }

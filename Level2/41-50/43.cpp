@@ -50,7 +50,7 @@ int main()
     cout << "\nArray Elements: \n";
     PrintArray(Arr, arrLength);
 
-    cout << "\nOdd Numbers Count is: ";
+    cout << "\nEven Numbers Count is: ";
     cout << CountEvenNumbers(Arr, arrLength) << endl;
 
     return 0;
