@@ -34,24 +34,28 @@ void PrintMatrix(int arr[3][3])
     }
 }
 
-int RowSum(int arr[3][3],short RowNumber, short Cols){
+int RowSum(int arr[3][3], short RowNumber, short Cols)
+{
     int Sum = 0;
-    for(int j=0;j<Cols;j++){
-        Sum+=arr[RowNumber][j];
+    for (int j = 0; j < Cols; j++)
+    {
+        Sum += arr[RowNumber][j];
     }
     return Sum;
 }
 
-void PrintEachRowSum(int arr[3][3],short Rows, short Cols){
-    for(int i=0;i<Rows;i++){
-        cout<<"Row "<<i+1<<" Sum = "<<RowSum(arr,i,Cols)<<endl;
+void PrintEachRowSum(int arr[3][3], short Rows, short Cols)
+{
+    for (int i = 0; i < Rows; i++)
+    {
+        cout << "Row " << i + 1 << " Sum = " << RowSum(arr, i, Cols) << endl;
     }
 }
 int main()
 {
 
     srand((unsigned)time(NULL));
-    
+
     int arr[3][3];
     FillMatrixWithRandomNumbers(arr);
 
@@ -59,5 +63,5 @@ int main()
     PrintMatrix(arr);
 
     cout << "\nThe following are the sum of each row in the matrix:" << endl;
-    PrintEachRowSum(arr,3,3);
+    PrintEachRowSum(arr, 3, 3);
 }
