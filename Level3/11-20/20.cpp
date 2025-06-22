@@ -21,7 +21,7 @@ bool IsPalindromMatrix(int Matrix[3][3], short Rows, short Cols)
         for (short j = 0; j < (Cols / 2); j++)
         {
 
-            if (Matrix[i][j] != Matrix[i][Cols - j - 1])
+            if (Matrix[i][j] != Matrix[i][Cols - 1 - j])
                 return false;
         }
     }
