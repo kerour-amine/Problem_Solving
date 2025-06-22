@@ -42,16 +42,16 @@ int ReadNumberToCount()
 
 short CountNumberInMatrix(int Matrix[3][3], short Rows, short Cols, int NumberToCount)
 {
-    short counter = 0;
+    short NumberCount = 0;
     for (short i = 0; i < Rows; i++)
     {
         for (short j = 0; j < Cols; j++)
         {
             if (Matrix[i][j] == NumberToCount)
-                counter++;
+                NumberCount++;
         }
     }
-    return counter;
+    return NumberCount;
 }
 
 int main()
